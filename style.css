@@ -3,17 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+    
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    
+    background: url('https://images.pexels.com/photos/2757549/pexels-photo-2757549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
 }
 .container {
     display: flex;
     justify-content: space-between;
+    
 }
 .login-btn {
     background: linear-gradient(to right, oklch(47.824% 0.15063 286.741), oklch(74.02% 0.21674 135.675));
@@ -24,11 +27,15 @@ body {
     font-size: 1.2rem;
     transition: background 0.3s ease, color 0.3s ease;
 }
+.auth-btns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
 .site-header {
-    background: linear-gradient(to left,oklch(66.7% 0.295 322.15), oklch(54.6% 0.245 262.881));
     padding: 1rem 0;
     max-width: 80%;
-    margin: 10px auto;
+    margin: 0 auto;
     border: 1px solid #ffffff;
     border-radius: 12px;
     padding-inline: 2rem;
@@ -70,26 +77,21 @@ nav {
     border-radius: 12px;
     text-align: center;
     padding: 6rem 1rem;
-    background: linear-gradient(to right,oklch(82.141% 0.26848 143.525), oklch(57.728% 0.19196 36.024));
     color: rgb(78, 101, 185);
     font-size: 3.5rem;
-     box-shadow:
-    0 4px 10px rgba(10, 10, 10, 1),
-    0 1px 3px rgba(-10, -10, 10, 2);
 }
 .hero span{
     border: 1px solid #ffffff;
     border-radius: 12px;
-    color: #ffffff;
+    color: oklch(100% 0.00011 271.152);
     padding: 0 0.5rem;
-    background-color: #95d2e4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .hero p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
     color: rgb(255, 255, 255);
 }
-
 .btn {
     display: inline-block;
     background: linear-gradient(to right, oklch(47.824% 0.15063 286.741), oklch(74.02% 0.21674 135.675));
@@ -100,8 +102,28 @@ nav {
     font-size: large;
     transition: background 0.3s ease, color 0.3s ease;
 }
+textarea {
+  width: 100%;
+  max-height: 90px;
+  padding: 1rem;
+  font-size: 1.2rem; /* Increase text size */
+  /* line-height: 1.5; */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+   resize: vertical;
+}
 
 .btn:hover {
   background: #0078ff;
   color: #fff;
+}
+.input-chat{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
